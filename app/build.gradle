@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "dave.com.project"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //将jnilibs下文件统一放到libs下面,添加指引
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+//指定arr文件的目录
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/systembartint-1.0.4.jar')
+    compile 'com.android.support:support-v4:23.0.0'
+    compile files('libs/volley.jar')
+    compile files('libs/gson-2.3.1.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/glide-3.6.1.jar')
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    compile 'com.android.support:design:23.0.0'
+    compile name: 'android-gif-drawable-1.2.8', ext: 'aar'
+}

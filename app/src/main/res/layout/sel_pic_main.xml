@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/cl_black"
+        android:onClick="Multiselect"
+        android:text="多选"
+        android:textColor="@color/cl_white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/cl_black"
+        android:onClick="Single"
+        android:text="单选"
+        android:textColor="@color/cl_white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/cl_black"
+        android:onClick="Camera"
+        android:text="相机"
+        android:textColor="@color/cl_white"/>
+
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+    <!--android:id="@+id/my_image_view"-->
+    <!--android:layout_width="130dp"-->
+    <!--android:layout_height="130dp"/>-->
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

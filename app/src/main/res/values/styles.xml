@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.DeviceDefault">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/cl_no_color</item>
+        <item name="android:textColorPrimaryInverse">@android:color/black</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <color name="cl_no_color">#00000000</color>
+    <color name="cl_333333">#333</color>
+
+    <!-- 标题栏title统一文字大小 -->
+    <style name="TitleText">
+        <item name="android:textColor">@color/cl_333333</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+</resources>

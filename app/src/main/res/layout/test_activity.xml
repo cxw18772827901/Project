@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F51B5"/>
+    <!--风格1:基础风格-->
+    <!--<com.dave.project.wedjet.fresh.SmartRefreshLayout-->
+    <!--android:id="@+id/refreshLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="#eee"-->
+    <!--app:srlEnableFooterFollowWhenLoadFinished="true">-->
+
+    <!--<com.dave.project.wedjet.fresh.header.ClassicsHeader-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:srlDrawableProgress="@drawable/ic_progress_hojder"/>-->
+
+    <!--风格2:gif风格-->
+    <com.dave.project.wedjet.fresh.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.7"
+        app:srlEnableAutoLoadmore="true"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlHeaderHeight="150dp"
+        app:srlHeaderMaxDragRate="1.3"
+        app:srlHeaderTriggerRate="0.5">
+
+        <!--注意这个是appcompat中属性,添加报错-->
+        <!--android:layout_marginTop="?attr/actionBarSize"-->
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gif_header_repast"
+            app:layout_srlBackgroundColor="@android:color/transparent"
+            app:layout_srlSpinnerStyle="Scale"/>
+
+        <!--<ListView-->
+        <com.dave.project.wedjet.PinnedSectionListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:overScrollMode="never"
+            tools:listitem="@android:layout/simple_list_item_2"/>
+
+        <com.dave.project.wedjet.fresh.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Translate"/>
+    </com.dave.project.wedjet.fresh.SmartRefreshLayout>
+
+    <!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="#f00"/>-->
+</LinearLayout>

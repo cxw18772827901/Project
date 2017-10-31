@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_f0f0f0">
+
+    <ImageView
+        android:id="@+id/iv_base_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+    <!--android:src="@drawable/ic_app_title_bg"-->
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:background="#000"
+            android:paddingBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_view_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/cl_no_color">
+
+                <TextView
+                    android:id="@+id/tv_title_back"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/sel_btn_white"
+                    android:drawablePadding="3.5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:text="    "
+                    android:textColor="@drawable/sel_title_bar_black_text"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_title_back_no_arrow"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:text="    "
+                    android:textColor="@drawable/sel_title_bar_black_text"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_title_title"
+                    style="@style/TitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/cl_white"
+                    android:textSize="18sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_right_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/tv_title_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="10dp"
+                        android:text="確定"
+                        android:textColor="@drawable/sel_title_bar_white_text"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_title_right"
+                        android:layout_width="30dp"
+                        android:layout_height="15dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_launcher"
+                        android:visibility="gone"/>
+                    <!--如果还有其他按钮,可以继续添加-->
+                    <TextView
+                        android:id="@+id/tv_title_right_mult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/multi_bg"
+                        android:gravity="center"
+                        android:paddingBottom="2.5dp"
+                        android:paddingLeft="7.5dp"
+                        android:paddingRight="7.5dp"
+                        android:paddingTop="2.5dp"
+                        android:text="确定(2/3)"
+                        android:textColor="@color/cl_444444"
+                        android:textSize="15sp"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

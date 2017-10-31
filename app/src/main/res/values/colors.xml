@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="cl_f6c708">#f6c708</color>
+    <color name="cl_black">#000</color>
+    <color name="cl_f0f0f0">#f0f0f0</color>
+    <color name="cl_white_half">#7fffffff</color>
+    <color name="cl_white">#fff</color>
+    <color name="cl_999999">#999</color>
+    <color name="cl_444444">#444</color>
+    <color name="bottom_bg">#aaaaaa</color>
+    <color name="cl_3F51B5">#3F51B5</color>
+</resources>

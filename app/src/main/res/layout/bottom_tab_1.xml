@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_tab"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/tab_iv_sel"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_tab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1.5dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="的所发生的"
+        android:textColor="@color/tab_tv_col_sel"
+        android:textSize="12sp"
+        android:visibility="visible"/>
+
+    <FrameLayout
+        android:id="@+id/fl_pop"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="70dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_msg_pop_bg"/>
+
+        <TextView
+            android:id="@+id/tv_pop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="99+"
+            android:textColor="@color/cl_white"
+            android:textSize="10dp"/>
+    </FrameLayout>
+</RelativeLayout>
